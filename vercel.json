@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "regions": ["hnd1"],
+  "public": false,
+  "github": { "silent": true },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/file"
+    }
+  ]
+}
