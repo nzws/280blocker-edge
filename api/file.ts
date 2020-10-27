@@ -1,8 +1,10 @@
 import { promises } from 'fs';
+import { join } from 'path';
+import { tmpdir } from 'os';
 import got from 'got';
 import { NowRequest, NowResponse } from '@vercel/node';
 
-const FILE_PATH = '.cache';
+const FILE_PATH = join(tmpdir(), '.280-cache');
 const CACHE_DAYS = 7;
 
 export default async (req: NowRequest, res: NowResponse): Promise<void> => {
